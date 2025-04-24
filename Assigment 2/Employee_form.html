@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Employee Data Form</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 30px;
+    }
+
+    .form-container {
+    background-color: #ccc;
+    width: 900px;
+    margin: auto;
+    padding: 25px 40px;
+    border-radius: 5px;
+    }
+
+    h2 {
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+    }
+
+    .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    }
+
+    .form-col {
+    width: 48%;
+    }
+
+    label {
+    display: inline-block;
+    width: 130px;
+    font-size: 14px;
+    }
+
+    input[type="text"], input[type="date"] {
+    width: 180px;
+    padding: 4px;
+    font-size: 14px;
+    }
+
+    .radio-group, .checkbox-group {
+    margin-left: 135px;
+    margin-top: 5px;
+    }
+radio-group label, .checkbox-group label {
+    margin-right: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Employee Data</h2>
+
+    <div class="form-row">
+    <div class="form-col">
+        <label>Employee ID:</label><input type="text" value="102"><br><br>
+        <label>Manager ID:</label><input type="text" value="501"><br><br>
+        <label>Emp. First Name:</label><input type="text" value="Fran"><br><br>
+        <label>Emp. Last Name:</label><input type="text" value="Whitney"><br><br>
+        <label>Department ID:</label><input type="text" value="100"><br><br>
+        <label>Street:</label><input type="text" value="49 East Washington Street"><br><br>
+        <label>City:</label><input type="text" value="Needham"><br><br>
+        <label>State:</label><input type="text" value="MA"><br><br>
+        <label>Zip Code:</label><input type="text" value="02192"><br><br>
+        <label>Phone:</label><input type="text" value="(617) 555-3985"><br><br>
+        <label>Sex:</label>
+        <div class="radio-group">
+        <label><input type="radio" name="sex"> Male</label><br>
+        <label><input type="radio" name="sex" checked> Female</label>
+        </div>
+    </div>
+
+    <div class="form-col">
+        <label>Birth Date:</label><input type="text" value="06/05/1962"><br><br>
+        <label>Soc. Sec. No.:</label><input type="text" value="017-34-9033"><br><br>
+        <label>Salary:</label><input type="text" value="$45,700.00"><br><br>
+        <label>Start Date:</label><input type="text" value="02/26/1990"><br><br>
+        <label>Termination Date:</label><input type="text" value="00/00/0000"><br><br>
+        <label>Status:</label>
+        <div class="radio-group">
+        <label><input type="radio" name="status" checked> Active</label><br>
+        <label><input type="radio" name="status"> Terminated</label><br>
+        <label><input type="radio" name="status"> On Leave</label>
+        </div>
+        <label>Health Insurance:</label>
+        <div class="checkbox-group">
+        <label><input type="checkbox" checked></label>
+        </div>
+        <label>Life Insurance:</label>
+        <div class="checkbox-group">
+        <label><input type="checkbox" checked></label>
+        </div>
+        <label>Day Care:</label>
+        <div class="checkbox-group">
+        <label><input type="checkbox"></label>
+        </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

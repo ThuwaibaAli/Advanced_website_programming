@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pizza Order Form</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background: #f3f0f0dc;
+    }
+
+    .container {
+    width: 800px;
+    margin: 30px auto;
+    background: #cecdcdd8;
+    border: 1px solid #ccc;
+    padding: 20px;
+    }
+
+    h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .section {
+    border: 1px solid #999;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    }
+
+    .section label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    }
+
+    .section input[type="text"],
+    .section input[type="email"],
+    .section input[type="password"],
+    .section input[type="number"],
+    .section select,
+    .section textarea {
+    width: 200px;
+    padding: 4px;
+    }
+
+    .checkboxes label,
+    .radio-group label {
+    display: inline-block;
+    margin-right: 10px;
+    width: auto;
+    }
+
+    .buttons {
+    text-align: left;
+    margin-top: 20px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+    padding: 8px 15px;
+    margin: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h2>PIZZA ORDER FORM</h2>
+
+<form action="#" method="post">
+    <!-- Delivery Address -->
+    <div class="section">
+    <h4>Delivery Address</h4>
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+
+    <label for="address">Stree Address:</label>
+    <input type="text" id="address" name="address" placeholder="Address"><br><br>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" placeholder="Phone">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Password">
+    </div>
+
+    <!-- Payment Information -->
+    <div class="section">
+    <h4>Payment Information</h4>
+    <label for="cardtype">Card Type:</label>
+    <select id="cardtype" name="cardtype" placeholder="Visa"><br><br>
+        <option value="visa">Visa</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="discover">Discover</option>
+    </select>
+
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" name="cardnumber" placeholder="Card Number"><br><br>
+
+    <label for="cardname">Name on Card:</label>
+    <input type="text" id="cardname" name="cardname" placeholder="Name">
+    </div>
+
+    <!-- Customize Pizza -->
+    <div class="section">
+    <h4>Customize Your Pizza</h4>
+    <label for="pizzasize">Pizza size:</label>
+    <select id="pizzasize" name="pizzasize">
+        <option value="large" selected>large</option>
+        <option value="medium">medium</option>
+        <option value="small">small</option>
+    </select>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity"><br><br>
+
+    <label>Spices:</label>
+    <div class="checkboxes" style="margin-left: 120px;">
+        <label><input type="checkbox" name="spices" value="blackpepper"> Black pepper</label>
+        <label><input type="checkbox" name="spices" value="bellpeppers"> Bell peppers</label>
+        <label><input type="checkbox" name="spices" value="mayonnaise"> Mayonnaise</label>
+    </div><br>
+
+    <label for="requirements">Other Requirements:</label>
+    <textarea id="requirements" name="requirements" rows="3" placeholder="Any Other Reuirement"></textarea>
+
+    Meat: Fish<input type="radio" name="meat"> 
+    Cow<input type="radio" name="meat"> 
+    Chicken<input type="radio" name="meat"> 
+    </div>
+
+    <input type="reset" value="Clear Order">
+    <input type="submit" value="Place Order">
+
+</form>
+</div>
+
+</body>
+</html>

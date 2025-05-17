@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Basics Lab 6</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  input, button {
+    margin: 5px;
+  }
+  </style>
+</head>
+<body>
+  <section id="calc-section">
+    1st Number<input type="number" id="num1"><br>
+  2nd Number <input type="number" id="num2"><br>
+    <button onclick="calculate('multiply')">Multiply</button>
+    <button onclick="calculate('divide')">Divide</button>
+    <p id="calc-result"></p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

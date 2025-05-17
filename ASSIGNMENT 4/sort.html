@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JavaScript Basics Lab 6</title>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+input, button {
+    margin: 5px;
+}
+</style>
+</head>
+<body>
+    <section id="sort-section">
+        <b>Input Section</b><br>
+        <input type="number" id="sort1" />
+        <input type="number" id="sort2" />
+        <input type="number" id="sort3" /><br>
+        <button onclick="sortNumbers(true)">Sort Ascending</button>
+        <button onclick="sortNumbers(false)">Sort Descending</button>
+        <p id="sort-output"></p>
+    </section>
+    
+    <script src="script.js"></script>
+    </body>
+    </html>
